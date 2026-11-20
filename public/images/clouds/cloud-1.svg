@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" fill="none">
+  <defs>
+    <linearGradient id="c1-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.99"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="75%" stop-color="#f1f5f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#cbd5e1" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="c1-highlight" x1="30%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="c1-shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#0f172a" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#38bdf8" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#c1-shadow)">
+    <!-- Base volumetric body -->
+    <path d="M120 280 C60 280, 20 230, 45 175 C55 150, 80 135, 110 132 C125 75, 185 30, 255 35 C285 37, 315 50, 335 72 C365 35, 425 20, 475 42 C515 60, 540 98, 545 140 C590 145, 625 175, 630 220 C635 260, 600 280, 550 280 Z" fill="url(#c1-grad)"/>
+
+    <!-- Soft puffy overlapping lobes for true 3D depth -->
+    <circle cx="250" cy="140" r="105" fill="#ffffff" fill-opacity="0.95"/>
+    <circle cx="430" cy="150" r="115" fill="#ffffff" fill-opacity="0.95"/>
+    <circle cx="340" cy="120" r="95" fill="#ffffff" fill-opacity="0.98"/>
+    <circle cx="160" cy="200" r="85" fill="#ffffff" fill-opacity="0.9"/>
+    <circle cx="530" cy="210" r="90" fill="#ffffff" fill-opacity="0.88"/>
+    <ellipse cx="350" cy="230" rx="230" ry="60" fill="url(#c1-grad)"/>
+
+    <!-- Luminous Sunlight Highlight Cap -->
+    <path d="M150 135 C175 65, 255 40, 320 65 C285 45, 210 50, 165 95 Z" fill="url(#c1-highlight)" opacity="0.85"/>
+    <path d="M345 70 C390 30, 470 35, 515 85 C475 50, 405 45, 360 85 Z" fill="url(#c1-highlight)" opacity="0.9"/>
+  </g>
+</svg>
+

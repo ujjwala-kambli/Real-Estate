@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" fill="none">
+  <defs>
+    <linearGradient id="c3-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.94"/>
+      <stop offset="100%" stop-color="#dbeafe" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="c3-shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#c3-shadow)">
+    <path d="M90 230 C45 230, 20 190, 35 150 C50 120, 85 105, 115 110 C135 60, 195 25, 255 35 C290 40, 320 60, 340 90 C370 50, 430 35, 480 55 C525 72, 550 110, 555 150 C600 155, 635 185, 630 220 C625 240, 595 230, 550 230 Z" fill="url(#c3-grad)"/>
+    <circle cx="240" cy="120" r="95" fill="#ffffff" fill-opacity="0.96"/>
+    <circle cx="420" cy="125" r="105" fill="#ffffff" fill-opacity="0.96"/>
+    <circle cx="330" cy="100" r="85" fill="#ffffff" fill-opacity="0.98"/>
+    <ellipse cx="320" cy="190" rx="220" ry="48" fill="url(#c3-grad)"/>
+  </g>
+</svg>
+
