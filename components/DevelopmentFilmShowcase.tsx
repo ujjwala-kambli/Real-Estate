@@ -83,11 +83,13 @@ export default function DevelopmentFilmShowcase() {
       }, { once: true });
     }
 
+    const isMobile = window.innerWidth < 768;
+
     const ctx = gsap.context(() => {
       const trigger = ScrollTrigger.create({
         trigger: containerRef.current,
         start: 'top top',
-        end: '+=3800',
+        end: isMobile ? '+=1800' : '+=3800',
         pin: true,
         pinSpacing: true,
         anticipatePin: 1,

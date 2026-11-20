@@ -6824,3 +6824,700 @@ p {
   }
 }
 
+/* ==========================================================================
+   COMPREHENSIVE TABLET & MOBILE RESPONSIVE ENGINE
+   Seamless, High-End Adaptive Architecture across 320px - 1024px Viewports
+   ========================================================================== */
+
+/* 1. Global Viewport Overflow Prevention */
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 2. Inner Pages Elements (Amenities, Residences, Development) */
+.amenity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(14, 27, 36, 0.08);
+}
+
+.amenity-image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.amenity-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.amenity-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--gold-dark);
+}
+
+.residence-feature {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 36px 0;
+  background: var(--ivory-card);
+}
+
+.residence-feature-image {
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+}
+
+.residence-feature-copy {
+  padding: clamp(28px, 4vw, 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.residence-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 36px 0;
+}
+
+/* 3. Tablet Responsiveness (768px - 1024px) */
+@media (max-width: 1024px) {
+  .site-header {
+    height: 74px;
+  }
+
+  .nav-inner {
+    padding: 0 20px;
+  }
+
+  .desktop-nav {
+    gap: 18px;
+  }
+
+  .hero-cloud-section {
+    min-height: auto;
+  }
+
+  .arch-3d-rotator {
+    width: 100vw;
+    left: 0;
+  }
+
+  .showcase-fullscreen-root {
+    min-height: auto;
+  }
+
+  .showcase-bottom-telemetry-bar {
+    padding: 0 24px;
+    padding-left: 24px;
+    height: 80px;
+  }
+
+  .telemetry-spec-chips {
+    display: none;
+  }
+
+  .residence-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .residence-feature-image {
+    height: 280px;
+  }
+
+  .residence-info-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .horizontal-sticky-inner {
+    min-height: auto;
+    padding: 24px 0 18px;
+  }
+
+  .stage-row {
+    grid-template-columns: 60px 180px 1fr;
+    gap: 20px;
+  }
+}
+
+/* 4. Mobile Responsiveness (< 768px) */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  .site-header {
+    height: 68px;
+  }
+
+  .brand-logo-img {
+    height: 34px;
+  }
+
+  .brand-wording strong {
+    font-size: 14px;
+  }
+
+  .brand-wording small {
+    font-size: 7.5px;
+  }
+
+  /* Section Padding & Headings */
+  .section-pad {
+    padding: 44px 0 !important;
+  }
+
+  .container-wide {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 26px !important;
+    line-height: 1.18 !important;
+    margin: 10px 0 12px !important;
+  }
+
+  .section-heading > p {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    min-height: 320px;
+    padding: 100px 0 44px;
+  }
+
+  .page-hero h1 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-hero p {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* HERO CLOUD VILLA: Crisp, Fluid, No Blank Card Collapsing */
+  .hero-cloud-section {
+    height: 100vh;
+    height: 100svh;
+    min-height: auto !important;
+  }
+
+  .hero-intro-text-stage {
+    padding: 0 16px;
+  }
+
+  .hero-main-heading {
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-main-subtext {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    max-width: 90vw !important;
+  }
+
+  .hero-search-pill-bar {
+    width: 92vw;
+    padding: 6px 8px;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 8px;
+  }
+
+  .search-input-wrap {
+    width: 100%;
+    padding: 4px 6px;
+  }
+
+  .hero-search-input {
+    font-size: 12.5px;
+  }
+
+  .hero-search-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 18px;
+    font-size: 12.5px;
+  }
+
+  /* Hide Range Slider & Elevation Ruler on Phone screens to prevent touch conflict */
+  .minimal-angle-scrollbar-pill,
+  .arch-elevation-ruler {
+    display: none !important;
+  }
+
+  .arch-corner {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .arch-3d-rotator {
+    width: 100vw !important;
+    left: 0 !important;
+    height: 100% !important;
+  }
+
+  /* DEVELOPMENT FILM SHOWCASE: Seamless Fullscreen with Touch Telemetry */
+  .showcase-fullscreen-root {
+    height: 100vh !important;
+    height: 100svh !important;
+    min-height: auto !important;
+  }
+
+  .showcase-fullscreen-media-stage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .showcase-fullscreen-native-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+  }
+
+  .showcase-bottom-telemetry-bar {
+    height: auto !important;
+    min-height: 86px;
+    padding: 10px 14px 14px 14px !important;
+    padding-left: 14px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    background: rgba(8, 16, 22, 0.96) !important;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .telemetry-bar-left {
+    min-width: 0 !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-right: 44px;
+  }
+
+  .telemetry-phase-tag {
+    font-size: 9.5px !important;
+    letter-spacing: 0.1em;
+  }
+
+  .telemetry-stage-title {
+    font-size: 15px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+
+  .telemetry-stage-subtitle {
+    display: none !important;
+  }
+
+  .telemetry-bar-center {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 6px !important;
+  }
+
+  .milestones-timeline-strip {
+    display: flex !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    gap: 4px !important;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .milestones-timeline-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .timeline-stage-marker {
+    padding: 4px 8px !important;
+    font-size: 10px !important;
+    min-width: 28px !important;
+    border-radius: 999px !important;
+  }
+
+  .timeline-stage-marker.is-active {
+    padding: 4px 10px !important;
+  }
+
+  .timeline-stage-marker .marker-name {
+    display: none;
+  }
+
+  .telemetry-bar-right {
+    position: absolute !important;
+    top: 10px !important;
+    right: 14px !important;
+  }
+
+  .telemetry-spec-chips {
+    display: none !important;
+  }
+
+  .telemetry-audio-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* HORIZONTAL CARDS: Fluid Mobile Slider */
+  .horizontal-cards-section {
+    overflow: hidden;
+  }
+
+  .horizontal-sticky-inner {
+    height: 100svh !important;
+    min-height: auto !important;
+    padding: 16px 0 12px !important;
+    justify-content: space-between !important;
+  }
+
+  .horizontal-header-row {
+    margin-bottom: 8px !important;
+    padding: 0 16px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  .horizontal-section-title {
+    font-size: 22px !important;
+    line-height: 1.15 !important;
+    margin: 2px 0 4px !important;
+  }
+
+  .horizontal-section-sub {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    max-width: 100% !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .header-right-arrows {
+    display: none !important;
+  }
+
+  .horizontal-track-viewport {
+    padding: 0 16px !important;
+    overflow: visible;
+  }
+
+  .horizontal-track-flow {
+    gap: 14px !important;
+  }
+
+  .premium-feature-card {
+    flex: 0 0 min(84vw, 300px) !important;
+    padding: 10px 10px 14px 10px !important;
+    border-radius: 18px !important;
+  }
+
+  .feature-card-image-wrap {
+    height: 155px !important;
+    border-radius: 14px !important;
+  }
+
+  .feature-card-body {
+    margin-top: 10px !important;
+    gap: 10px !important;
+  }
+
+  .card-body-left-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .card-body-title {
+    font-size: 15px !important;
+  }
+
+  .card-body-desc {
+    font-size: 11.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* 3D CURVED ARC GALLERY: Mobile Viewport Clamp */
+  .gallery-section {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    overflow: hidden;
+  }
+
+  .framer-arc-stage {
+    height: 290px !important;
+    margin: 4px 0 6px !important;
+    perspective: 700px !important;
+  }
+
+  .framer-arc-card {
+    width: 185px !important;
+    height: 250px !important;
+    border-radius: 16px !important;
+  }
+
+  .framer-arc-card.is-center,
+  .framer-arc-card.offset-0 {
+    transform: translate3d(0, -6px, 0) scale(1.04) !important;
+  }
+
+  .framer-arc-card.offset--1 {
+    transform: translate3d(-90px, 14px, -20px) rotate(-5deg) scale(0.82) !important;
+  }
+
+  .framer-arc-card.offset-1 {
+    transform: translate3d(90px, 14px, -20px) rotate(5deg) scale(0.82) !important;
+  }
+
+  .framer-arc-card.offset--2,
+  .framer-arc-card.offset-2,
+  .framer-arc-card.offset--3,
+  .framer-arc-card.offset-3,
+  .framer-arc-card.offset--4,
+  .framer-arc-card.offset-4 {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translate3d(0, 80px, -100px) scale(0.4) !important;
+  }
+
+  .gallery-mothe-arrow-bar {
+    margin: 2px 0 6px !important;
+    padding: 0 14px !important;
+  }
+
+  .mothe-arrow-btn {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .gallery-arrow-tag {
+    font-size: 10px !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .framer-arc-active-meta {
+    margin: 4px auto 10px !important;
+    padding: 0 14px !important;
+  }
+
+  .active-meta-title {
+    font-size: 18px !important;
+  }
+
+  .active-meta-subtitle {
+    font-size: 12px !important;
+  }
+
+  /* Lightbox Modal on Mobile */
+  .gallery-lightbox {
+    padding: 10px !important;
+  }
+
+  .lightbox-content {
+    max-width: 100% !important;
+    max-height: 94vh !important;
+    border-radius: 18px !important;
+  }
+
+  .lightbox-header-bar {
+    padding: 10px 14px !important;
+  }
+
+  .lightbox-image-wrap {
+    height: clamp(190px, 32vh, 260px) !important;
+  }
+
+  .lightbox-footer {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+
+  .lightbox-title {
+    font-size: 17px !important;
+  }
+
+  .lightbox-caption {
+    font-size: 12px !important;
+  }
+
+  .lightbox-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+
+  /* REAL ESTATE REWIRED SECTION */
+  .rewired-section {
+    padding: 24px 0 !important;
+  }
+
+  .rewired-luxury-card {
+    border-radius: 20px !important;
+    padding: 22px 14px !important;
+  }
+
+  .rewired-top-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .blueprint-video-wrapper {
+    height: 220px !important;
+    border-radius: 14px !important;
+  }
+
+  .rewired-manifesto-banner {
+    padding: 20px 14px !important;
+    margin-top: 20px !important;
+  }
+
+  .manifesto-title {
+    font-size: 20px !important;
+  }
+
+  .manifesto-desc {
+    font-size: 12.5px !important;
+  }
+
+  .rewired-center-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+    margin: 22px 0 16px !important;
+  }
+
+  .rewired-center-actions .pill-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* CONSULTATION SUITE (#enquire) */
+  .closing-cta-luxury {
+    padding: 30px 0 !important;
+  }
+
+  .home-consultation-credentials-suite {
+    padding: 20px 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .suite-heading {
+    font-size: 20px !important;
+  }
+
+  .suite-desc {
+    font-size: 12.5px !important;
+  }
+
+  .contact-quick-bar {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .quick-channel-pill {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 11.5px !important;
+  }
+
+  .quick-inquiry-box {
+    padding: 12px 14px !important;
+  }
+
+  .inquiry-input-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  /* INNER PAGES: STAGES / DEVELOPMENT */
+  .stage-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .stage-row-number {
+    font-size: 20px !important;
+  }
+
+  .stage-row-image {
+    width: 100% !important;
+    height: 180px !important;
+    border-radius: 12px !important;
+  }
+
+  .stage-row-icon {
+    display: none !important;
+  }
+
+  /* CONTACT PAGE */
+  .contact-layout {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .enquiry-form {
+    padding: 22px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* FOOTER */
+  .site-footer {
+    padding: 44px 0 24px !important;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 12px !important;
+    text-align: center !important;
+  }
+}
+

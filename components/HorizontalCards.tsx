@@ -105,13 +105,15 @@ export default function HorizontalCards() {
         return Math.max(0, track.scrollWidth - window.innerWidth);
       };
 
+      const isMobile = window.innerWidth < 768;
+
       const tween = gsap.to(track, {
         x: () => -getScrollDistance(),
         ease: 'none',
         scrollTrigger: {
           trigger: containerRef.current,
           start: 'top top',
-          end: () => `+=${getScrollDistance()}`,
+          end: () => isMobile ? `+=${Math.min(1400, getScrollDistance())}` : `+=${getScrollDistance()}`,
           pin: true,
           scrub: 0.6,
           anticipatePin: 1,

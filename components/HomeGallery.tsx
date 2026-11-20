@@ -119,11 +119,13 @@ export default function HomeGallery({ limit = 8, showTabs = false }: HomeGallery
     if (!arcStageRef.current || !filteredItems.length) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    const isMobile = window.innerWidth < 768;
+
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: arcStageRef.current,
         start: 'top 5%', // Placed higher up so cards, titles and meta fit comfortably on screen
-        end: '+=2400',
+        end: isMobile ? '+=1200' : '+=2400',
         pin: true,
         pinSpacing: true,
         anticipatePin: 1,

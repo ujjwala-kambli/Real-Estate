@@ -171,9 +171,9 @@ export default function HeroCloudVilla() {
         scrollTrigger: {
           trigger: heroSectionRef.current,
           start: 'top top',
-          end: isMobile ? '+=5000' : '+=7500',
+          end: isMobile ? '+=1400' : '+=6000',
           pin: true,
-          scrub: 1.4,
+          scrub: 1.2,
           anticipatePin: 1
         }
       });
@@ -337,8 +337,8 @@ export default function HeroCloudVilla() {
       tl.to(
         houseCardRef.current,
         {
-          scale: 0.35,
-          borderRadius: '54px',
+          scale: isMobile ? 0.94 : 0.35,
+          borderRadius: isMobile ? '20px' : '54px',
           opacity: 0,
           ease: 'power2.inOut',
           duration: 0.04
